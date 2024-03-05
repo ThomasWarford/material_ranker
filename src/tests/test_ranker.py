@@ -1,4 +1,4 @@
-from Ranker import Ranker
+from src.Ranker import Ranker
 
 
 ranker = Ranker("model", "You are an AI")
