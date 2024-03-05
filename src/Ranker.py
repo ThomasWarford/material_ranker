@@ -15,6 +15,7 @@ class Ranker():
         df = self.create_table(material_ids)
         prompt = f"{self.initial_prompt}\n{df.to_csv()}"
 
+
         return prompt
 
     def create_table(self, material_ids):
@@ -31,20 +32,22 @@ class Ranker():
     def get_experimentally_observed(self, material_id: str):
         with MPRester(API_KEY) as mpr:
             data = mpr.materials.summary.search(material_ids=material_id, fields=["theoretical"])
-
         return not data[0].theoretical
 
 
     def get_paper_titles(self, material_id: str):
         with MPRester(API_KEY) as mpr:
+
             docs = mpr.materials.provenance.search(fields="references", material_ids=material_id)
             bibtexs = docs[0].references
+
 
         pattern = r'title\s*=\s*"([^"]+)"'
 
         titles = []
 
         for bibtex in bibtexs: 
+
             match = re.search(pattern, bibtex)
             if match:
                 titles.append(match.group(1))
@@ -54,6 +57,7 @@ class Ranker():
     def get_theoretical_list(self, material_ids: list):
         '''Unused and untested'''
         with MPRester(API_KEY) as mpr:
+
             data = mpr.materials.summary.search(material_ids=material_ids, fields=["item.material_id", "theoretical"])
 
         is_theoretical = {}
