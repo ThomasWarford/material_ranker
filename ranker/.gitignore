@@ -1,0 +1,17 @@
+# Files over 4mb
+notebooks/ArXiv_vector_paper_search/all_paper_vector_embeddings/compressed_array.npz
+notebooks/ArXiv_vector_paper_search/all_paper_vector_embeddings/compressed_dataframe.csv
+notebooks/experimentation/density_drop_notebooks/.ipynb_checkpoints/df_full_structure-checkpoint.csv
+notebooks/experimentation/density_drop_notebooks/df_full_structure.csv
+notebooks/Create_dataframe/df_fingerprint_old.csv
+notebooks/Create_dataframe/df_cut_av_drop=0.925.csv
+notebooks/Create_dataframe/df_full_flat_mat_info.csv
+notebooks/Create_dataframe/df_with_final_MST_drop_scores.csv
+notebooks/Create_dataframe/df_fingerprint.csv
+notebooks/Create_dataframe/df_cut_av_drop=0.98.csv
+notebooks/Create_dataframe/.ipynb_checkpoints/df_with_final_MST_drop_scores-checkpoint.csv
+notebooks/Create_dataframe/.ipynb_checkpoints/df_cut_average_drop=0.6944_MS7_MC6_PERPLXTY40-checkpoint.csv
+notebooks/Create_dataframe/.ipynb_checkpoints/df_fingerprint_old-checkpoint.csv
+notebooks/Create_dataframe/.ipynb_checkpoints/df_full_structure-checkpoint.csv
+notebooks/Create_dataframe/.ipynb_checkpoints/df_full_flat_mat_info-checkpoint.csv
+notebooks/Create_dataframe/df_full_structure.csv
